@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<!--Lesson Name FILL IN-->
+<title>Lesson 1: Characteristics of Polynomial Functions</title>
+
+<!--Import of Stylesheet-->
+<link href="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/../../Template/cbestylesheet.css" rel="stylesheet" type="text/css" />
+<!-- Import jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+ <!-- Run jQuery script to add print css, add solution buttons, add Mathjax library-->
+<script src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/../../Template/custom_scripts.js"></script>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<div id="header">
+<h1>Lesson 1: Characteristics of Polynomial Functions</h1>
+</div>
+
+<!-- CONTENT -->
+
+<img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/2178253319_bd311c3191.jpg" width="20%" class="TextWrapLeft Rounded"/>
+<p>Many real-life situations can be modeled by polynomial functions. For example, the volume of a silo is a polynomial function of its radius.</p>
+<p>In this lesson you will investigate the following <strong>properties of polynomial functions</strong>:</p>
+<ul>
+<li>A polynomial function is an equation of the form `f(x)=a_(n)x^n+a_(n-1)x^(n-1)+...+a_(2)x^2+a_(1)x+a_(0)`, where the coefficients `a_n`, `a_(n-1)`, ..., `a_1`, `a_0` represent real numbers, `a_n` is not zero, and the exponents are non-negative integers.</li>
+<li>The real zeros of a function are the `x`-intercepts of its graph.</li>
+<li>You can describe the behavior of a function based on its degree, the leading coefficient and the constant term.</li>
+</ul>
+
+<div id="review"><h2 class="ReviewHeader">Review</h2>
+
+<p>Before beginning this lesson you should be able to:</p>
+<ul>
+<li>Use a graphing calculator to find the <em>x</em> and <em>y</em>-intercepts.</li>
+<li>Analyze quadratic functions to identify characteristics of the corresponding graph, including:
+<ul>
+<li>vertex</li>
+<li>domain and range</li>
+<li>direction of opening</li>
+<li>axis of symmetry</li>
+<li>`x`- and `y`-intercepts</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="Example">
+<p>Examples and non-examples of polynomial functions include:</p>
+<table class="DataTable">
+      	<tr>
+      		<th>Examples</th>
+      		<th>Non Examples</th>
+      	</tr>
+      	<tr>
+      		<td>`f(x)=5x^3-8x^2+x+1`</td>
+      		<td>`f(x)=x/(x^2-3)`</td>
+      	</tr>
+      	<tr><td>`g(x)=6x^3`</td>
+      	<td>`g(x)=2^sqrt(x)-4x+5`</td>
+      	</tr>
+      	<tr><td>`h(x)=2.1x^4+3.5x^3-4x^2+x-7`</td>
+      	<td>`h(x)=sqrt(x-4)`</td>
+      	</tr>
+		</table>
+		<p>Notice that a function CANNOT be classified as a polynomial function if:</p>
+<ul>
+<li>an exponent is a fraction, negative number, radical, etc. All exponents must be a positive integers.</li>
+<li>a variable is in the denominator. All variables must exist in the numerators only.</li>
+<li>a variable is located within a root sign</li>
+</ul>
+	</div>
+<p>Let's look at a specific example to cover some important terms:</p>
+<div class="Example">
+<h4>Example 1</h4>
+ <p>`f(x)=2x^4+3x^3-x^2-5x+10`.</p>
+<ul>
+<li>The <strong>coefficients</strong> are 2, 3, -1, -5 and 10. They can be any real number.</li>
+<li>The <strong>exponents</strong> are 4, 3, 2 and 1. They must be positive integers.</li>
+<li>The <strong>degree</strong> of the polynomial is 4. This is the highest exponent on a variable. The terms should always be arranged such that the exponents are in descending order.</li>
+<li>The <strong>leading coefficient</strong> is 2. It is the coefficient of the highest degree term.</li>
+<li>The <strong>constant term </strong>is 10. It is the term without a variable, or a variable of degree zero (`x^0`).</li>
+</ul>
+</div>
+<div class="Example">
+  <h4>Example 2</h4>
+  <p>Watch the video below.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-LJ5Bt8UwCo?rel=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+<p>Answer the following questions:</p>
+<ol>
+<li>Describe how the graphs of polynomial functions where `a` is positive differ from those where `a` is negative.</li>
+<li>What does the value of a constant term represent in a graph?</li>
+<li>How is the shape of the graph of a cubic function different from the shape of the graph of a quadratic function?</li>
+<li>How is the shape of the graph of a quartic function different from the shape of the graph of a cubic function? a quadratic function?</li>
+<li>How do the shapes of the odd-degree polynomial functions compare?</li>
+<li>How do the shapes of the even-degree polynomial functions compare?</li>
+<li>How many `x`-intercepts can a polynomial function of degree 1, 2, 3, 4, or 5 have?</li>
+<li>How do the parameters (`a`, `b`, `c`, `d`, `e`, and `f`) in the functions relate to the `x`-intercepts of the corresponding graph?</li>
+</ol>
+</div>
+<div class="Definition">
+<h4>Polynomial Functions Summary</h4>
+<ul>
+<li>A <strong>polynomial function</strong> is an equation of the form `f(x)=a_(n)x^n+a_(n-1)x^(n-1)+...+a_(2)x^2+a_(1)x+a_(0)`, where the coefficients `a_n`, `a_(n-1)`, ..., `a_1`, `a_0` represent real numbers, `a_n` is not zero, and the exponents are non-negative integers.<br /><br /></li>
+<li>The <strong>degree</strong> of a polynomial function is equal to the highest exponent of the variable.<br /><br /></li>
+<li>When a polynomial is written in expanded form and in order of decreasing exponents, the first term is called the leading term. The first term&rsquo;s coefficient is called the <strong>leading coefficient</strong>. <br /><br /></li>
+<li>Graphs of <strong>odd-degree polynomial functions</strong> have the following characteristics:<br /><br />
+<ul>
+<li>When the leading coefficient is positive, a graph extends up into quadrant I and down into quadrant III.</li>
+<li>When the leading coefficient is negative, a graph extends up into quadrant II and down into quadrant IV.</li>
+<li>There can be from one to up to a maximum of `n` `x`-intercepts, where `n` is the degree of the function. There is at least one `x`-intercept.</li>
+<li>A `y`-intercept corresponds to the constant term of the function.</li>
+<li>A domain is `{x|x\ in R}` and a range is `{y|yinR}`.</li>
+<li>There are no maximum or minimum points.<br /><br /></li>
+</ul>
+</li>
+<li>Graphs of <strong> even-degree polynomial functions</strong> have the following characteristics:<br /><br />
+<ul>
+<li>When the leading coefficient is positive, a graph extends up into quadrant I and up into quadrant II; and there is a minimum point.</li>
+<li>When the leading coefficient is negative, a graph extends down into quadrant III and down into quadrant IV; and there is a maximum point.</li>
+<li>There can be from zero to up to a maximum of `n` `x`-intercepts, where `n` is the degree of the function.</li>
+<li>A `y`-intercept corresponds to the constant term of the function.</li>
+<li>A domain is `{x|x\ in R}` and a range depends on the maximum or minimum value of the function.</li>
+<li>A zero-degree polynomial function is called a constant function. Its graph is a horizontal line that has zero `x`-intercepts. </li>
+</ul>
+</li>
+</ul>
+</div>
+<h2>End Behaviour</h2>
+<p>When sketching polynomial functions, one of the characteristics of interest is the behaviour of `f(x)` (the `y`-coordinates) as `x` approaches infinity or negative infinity. This is called <strong>end behaviour</strong>. Consider the following graph:</p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/important_graph.jpg" width="216" height="216"/></p>
+<p>As `x` approaches `-\infty` (negative infinity), the `y`-coordinates approach `\infty` (infinity or positive infinity).<br />As `x` approaches `\infty`, the `y`-coordinates approach `-\infty`. So, you would say that this graph extends up into quadrant II and down into quadrant IV.</p>
+<p>The end behaviour of all odd-degree polynomial functions is the same as `y=x` or `y=-x`. Since the graphs of `y=x` and `y= -x` are easy to remember, so is the end behaviour of all odd functions.</p>
+<p>The end behaviour of all even-degree polynomial functions is the same as `y=x^2` or `y=-x^2`. Since the graphs of `y=x^2` and `y=-x^2` are easy to remember, so is the end behaviour of all even functions.</p>
+<h2>Examples of end behaviour</h2>
+<table class="DataTable">
+<tr>
+	<th>Even Degree</th>
+	<th>Odd Degree</th>
+</tr>
+<tr>
+	<td>
+	  <p>Degree 0 (Constant Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_1.png" width="100" height="100"/></p>
+		<p>Number of `x`-intercepts: 0</p><p>End behavior: line extends horizontally</p>
+		<p>Domain: `{x|x\ in R}`</p>
+		<p>Range: `{y|y=3, yinR}`</p>
+	</td>
+	<td>
+	  <p>Degree 1 (Linear Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_2.png" width="100" height="100"/></p>
+		<p>Number of `x`-intercepts: 1</p><p>End behavior: line extends up into quadrant I and down into quadrant III</p>
+		<p>Domain: `{x|x\ in R}`</p>
+		<p>Range: `{y|yinR}`</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	  <p>Degree 2 (Quadratic Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_3.png" width="100" height="100" alt=""/></p>
+		<p>number of `x`-intercepts: 2</p>
+		<p>end behavior: curve extends down into quadrant III and down into quadrant IV</p>
+		<p>domain: `{x|x\ in R}`</p>
+		<p>range: `{y|y<=2.125, yinR}`</p>
+	</td>
+	<td>
+	  <p>Degree 3 (Cubic Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_4.png" width="100" height="100"/></p>
+		<p>Number of `x`-intercepts: 3</p><p>End behavior: line extends up into quadrant I and down into quadrant III</p>
+		<p>Domain: `{x|x\ in R}`</p>
+		<p>Range: `{y|yinR}`</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	  <p>Degree 4 (Quartic Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_5.png" width="100" height="100" alt=""/></p>
+		<p>Number of `x`-intercepts: 4</p>
+		<p>End behavior: line extends up into quadrant I and up into quadrant II</p>
+		<p>Domain: `{x|x\ in R}`</p>
+		<p>Range: `{y|y>=-3.25, yinR}`</p>
+	</td>
+	<td>
+	  <p>Degree 5 (Quintic Function)</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/example_6.png" width="100" height="100" alt=""/></p>
+		<p>number of `x`-intercepts: 5</p>
+		<p>end behavior: line extends up into quadrant II and down into quadrant IV</p>
+		<p>domain: `{x|x\ in R}`</p>
+		<p>range: `{y|yinR}`</p>
+	</td>
+</tr>
+</table>
+
+<div class="Example">
+  <h4>Example 3</h4>
+<p>What are the degree, type, leading coefficient, and constant term of each polynomial function?</p>
+	<ol type="a">
+	<li>`f(x)=-x+4`</li>
+	<li>`y=2x^3-x^2+5x-4`</li>
+	<li>`g(x)=-10`</li>	
+	<li>`y=x^5-2x^3+4`</li>
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+	<ol type="a">
+		<li><p>degree 1, linear, -1, 4</p></li>
+		<li><p>degree 3, cubic, 2, -4</p></li>
+		<li><p>degree 0, constant, 0, -10</p></li>
+		<li><p>degree 5, quintic, 1, 4</p></li>
+	</ol>
+</div>
+</div>
+<div class="Example">
+  <h4>Example 4</h4>
+<p>Identify a polynomial function as even or odd degree.</p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_3_e.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_8_o.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_6_e.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_4_e.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_1_o.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_5_o.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_2_o.gif" width="150" height="150" alt=""/></p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_7_e.gif" width="150" height="150" alt=""/></p>
+<div class="Solution">
+<h4>Solution</h4>
+<table class="DataTable">
+<tr>
+	<th>Even</th>
+	<td>Odd</td>
+</tr>
+<tr>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_3_e.gif" width="150" height="150" alt=""/></td>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_1_o.gif" width="150" height="150" alt=""/></td>
+</tr>
+<tr>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_4_e.gif" width="150" height="150" alt=""/></td>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_2_o.gif" width="150" height="150" alt=""/></td>
+</tr>
+<tr>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_6_e.gif" width="150" height="150" alt=""/></td>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_5_o.gif" width="150" height="150" alt=""/></td>
+	</tr>
+<tr>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_7_e.gif" width="150" height="150" alt=""/></td>
+	<td><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT2_8_o.gif" width="150" height="150" alt=""/></td>
+</tr>
+</table>
+	</div>
+	</div>
+<div class="Example">
+  <h4>Example 5</h4>
+<p>Each graph represents a polynomial function. Order the graphs from lowest to highest degree.</p>
+	<ol type="a">
+		<li></li><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT3_graph5.png" width="168" height="167" alt=""/>
+		<li></li><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT3_graph6.png" width="167" height="167" alt=""/>
+		<li></li><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT3_graph7.png" width="168" height="167" alt=""/>	
+		<li></li><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT3_graph8.png" width="168" height="167" alt=""/>
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+	<p>b, d, a, c</p>
+</div>
+</div>
+
+<div class="Example">
+  <h4>Example 6</h4>
+<p>Use the degree and the sign of the leading coefficient of each function to describe the end behaviour of the corresponding functions. State the value of the `y`-intercept.</p>
+	<ol type="a">
+	<li>`f(x)=x^2+3x-1`</li>
+	<li>`g(x)=-4x^3+2x^2-x+5`</li>
+	<li>`h(x)=-7x^4+2x^3-3x^2+6x+4`</li>
+	<li>`q(x)=x^5-3x^2+9x`</li>
+	<li>`p(x)=4-2x`</li>
+	<li>`v(x)=-x^3+2x^4-4x^2`</li>
+	<li>`y=2(x-3)(x+3)`</li>
+	<li>`y=-3(x-4)(x+2)(x+1)`</li>
+	<li>`y=2(x+2)(x+2)(x+2)`</li>	
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+	<ol type="a">
+	<li><p>The degree of the polynomial is even and the polynomial has a positive leading coefficient. The graph will extend up into quadrants II and I.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, -1).</p></li>
+		<li><p>The degree of the polynomial is odd and the polynomial has a negative leading coefficient. The graph will extend up into quadrant II and down into quadrant IV.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 5).</p></li>
+		<li><p>The degree of the polynomial is even and the polynomial has a negative leading coefficient. The graph will extend down into quadrants III and IV.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 4).</p></li>
+<li><p>The degree of the polynomial is odd and the polynomial has a positive leading coefficient. The graph will extend down into quadrant III and extend up into quadrant I.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 0).</p></li>
+<li><p>First write the function in decreasing order of exponents: `p(x)=-2x+4`. The degree of the polynomial is odd and the polynomial has a negative leading coefficient. The graph will extend up into quadrant II and extend down into quadrant IV.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 4).</p></li>
+<li><p>First write the function in decreasing order of exponents: `v(x)=2x^4-x^3-4x^2`. The degree of the polynomial is even and the polynomial has a positive leading coefficient. The graph will extend up into quadrants II and I.</p>
+<p>Substituting zero for`x` gives the `y`-intercept (0, 0).</p></li>
+<li><p>There are two factors containing `x`; therefore, the expanded form of the polynomial is of degree 2. The degree of the polynomial is even and the polynomial has a positive leading coefficient. The graph will extend up into quadrants II and I.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, -18).</p></li>
+<li><p>There are three factors containing `x`; therefore, the expanded form of the polynomial is of degree 3. The degree of the polynomial is odd and the polynomial has a negative leading coefficient. The graph will extend up into quadrant II and extend down into quadrant IV.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 24).</p></li>
+<li><p>There are three factors containing `x`; therefore, the expanded form of the polynomial is of degree 3. The degree of the polynomial is odd and the polynomial has a positive leading coefficient. The graph will extend down into quadrant III and extend up into quadrant I.</p>
+<p>Substituting zero for `x` gives the `y`-intercept (0, 16).</p></li>
+	</ol>
+</div>
+</div>
+
+<div class="Example">
+  <h4>Example 7</h4>
+<p>A box with no lid is made by cutting four squares of side length `x` from each corner of a 10 cm by 20 cm rectangular sheet of metal.</p>
+<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT7_box.jpg" width="60%" /></p>
+<ol type="a">
+<li>Find an expression that represents the volume of the box.</li>
+	<li>Sketch the graph of the function and state any restrictions on `x`.</li>
+	<li>Find the value of `x`, to the nearest hundredth of a centimetre, that gives the maximum volume.</li>
+	<li>What is the maximum volume of the box, to the nearest cubic centimetre?</li>	
+	<li>Assume the length is greater than the width. What are the dimensions of the box that give the maximum volume? Give your answers to the nearest hundredth of a centimetre.</li>
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+	<ol type="a">
+		<li>`V(x)=x(20-2x)(10-2x)`</li>
+		<li><p>Where `0 < x < 5`</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT7_graph.jpg" width="276" height="160" alt=""/></p>
+	</li>
+		<li><p>Using technology, the volume is a maximum when `x\approx 2.23` cm</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT7_calc_graph.jpg" width="202" height="133" alt=""/></p></li>
+		<li><p>Using technology, the maximum volume of the box is 192 cm^3.</p>
+		<p><img src="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/images/TT7_calc_graph.jpg" width="202" height="133" alt=""/></p></li>
+		<li><p>The length is `20- 2x=20-2(2.234... ) \approx 15.53` cm.</p>
+		<p>The width is `10-2x=10-2(2.234... ) \approx 5.53` cm.</p>
+		<p>The height is `x \approx 2.23` cm</p></li>
+	</ol>
+</div>
+</div>
+
+<!--Internet div tag-->
+<div id="internet"><h2 class="InternetHeader">Videos & Links on the Internet</h2>
+<ul>
+<li>Watch these video clips to see more. Be patient. The videos may take some time to download.
+<ul>
+<li><a href="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/videos/classifying.html" target="_blank" rel="noopener">Identifying (classifying) Polynomials</a></li>
+<li><a href="https://d2l.cbe.ab.ca/content/enforced/550394-cbel1920yrfmath301slkrausnick1/Polynomials/characteristics_lesson/videos/interpreting.html" target="_blank" rel="noopener">Interpreting a Graph</a><br /><br /></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<!--Homework div tag-->
+<div id="textbook"><h2 class="TextbookHeader">Homework</h2>
+<p><strong>Read:</strong> p. 106-113</p>
+<p><strong>Practice:</strong> p. 114-116: 1, 3, 4, 5, 6, 9, 10, 13.</p>
+<p><strong>Full solutions</strong>: <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/characteristics_lesson/assets/characteristics_textbook_solutions.pdf" target="_blank" rel="noopener">Characteristics solutions</a></p>
+<p>Check the solutions in the back of the textbook to make sure you are doing the questions correctly. If you aren't sure why you're getting a question wrong you can view the Full Solutions above.</p>
+<p>Ask your teacher if you have further questions!</p>
+</div>
+
+<!--Quiz div tag-->
+<div id="quiz"><h2 class="QuizHeader">Lesson Quiz</h2>
+<p>After reviewing the examples and completing the suggested textbook questions, complete the <strong> Lesson Quiz </strong>by clicking on  the &quot;quizzes&quot; link and choosing the quiz <strong>&quot;Characteristics of Polynomial Functions Lesson Quiz&quot;</strong>.</p>
+<p>You will have 2  attempts at this quiz, with your highest mark being the one that is  recorded in the gradebook. </p>
+<p>You do not have to complete both lesson quiz attempts right away. Learn from your mistakes in the first attempt before completing the second attempt. Be sure to ask your instructor if you have any questions. </p>
+<p>Good luck! </p>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">@2019 CBe-learn - Calgary Board of Education</div>
+</body>
+</html>

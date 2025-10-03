@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<!--Lesson Name FILL IN-->
+<title>Lesson 4: Solving Polynomial Equations</title>
+
+<!--Import of Stylesheet-->
+<link href="../../Template/cbestylesheet.css" rel="stylesheet" type="text/css" />
+<!-- Import jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+ <!-- Run jQuery script to add print css, add solution buttons, add Mathjax library-->
+<script src="../../Template/custom_scripts.js"></script>
+</head>
+
+<body>
+
+
+
+
+<!-- HEADER -->
+<div id="header">
+<h1>Lesson 4: Solving Polynomial Equations</h1>
+	</div>
+
+<!-- CONTENT -->
+
+
+<img src="images/king_tut.jpeg" width="20%" class="TextWrapLeft Rounded"/>
+<p><strong><em>King Tutankhamun's Tomb:</em></strong> Tutankhamun was born about 1343 B.C. He became king of ancient Egypt when he was only nine years old. When the Tutankhamun's tomb was discovered, it contained hundreds of objects. The valuables, such as gold statues, had been buried in the boxes. One of the boxes, in the shape of a rectangular prism, had a volume of about 45 m<sup>3</sup>. The width and the height of the box were approximately equal, and the length of the box was 2 m greater than the width.</p>
+<p></p>
+        <p>The volume, `V(x)`, of the box, where `x` is the width, can be expressed as follows.</p>
+        <p>`V=l\times w\times h`<br/>
+        `V(x)=(x+2)\times x\times x`<br/>
+        `=x^2(x+2)`<br/>
+        `=x^3+2x^2`</p>
+        <p>The volume was 45 m<sup>3</sup>, so</p>
+        <p>`x^3+2x^2=45`<br/>
+        or `x^3+2x^2-45=0`</p>
+        <p>The equation `x^3+2x^2-45=0` is an example of a polynomial  equation, also known as a cubic or third-degree equation.</p>
+        
+<p>In this lesson you will solve<strong> polynomial equations</strong>:</p>
+<ul>
+  <li>You can use the factor theorem and  the integral zero theorem to solve  polynomial equations by factoring.</li>
+  <li>You can solve polynomial equations by graphing the corresponding function. The `x`-intercepts of the corresponding function provide the solutions to the equation.</li>
+  <li>The shape of the graph of a function close to a zero depends on its multiplicity.</li>
+  <li>Not all functions change sing at a real zero.</li>
+  </ul>
+
+<div id="review"><h2 class="ReviewHeader">Review</h2>
+
+<p>Before beginning this lesson you should be able to:</p>
+<ul>
+  <li>Find the `y` and `x`-intercepts of linear and quadratic functions.</li>
+  <li>Solve quadratic equations by graphing and factoring.</li>
+  <li>Factor polynomials.</li>
+  </ul>
+  <p>Follow this <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/solving_quadratic_equations_review.html" target="_blank" rel="noopener">link</a>&nbsp;to review if needed.</p>
+</div>
+<div class="Definition">
+<h4>The Factor Theorem and Integral Zero Theorem Summary</h4>
+<ul>
+    <li>
+      <p>A <strong>polynomial equation</strong> is an equation in which a polynomial is set equal to 0 or to another polynomial.</p>
+    </li>
+    <li>You can sketch the graph of a polynomial function using the `x`-intercepts, the `y`-intercept, the degree of the function, and the sign of the leading coefficient.      <br />
+      <br />
+    </li>
+    <li>Polynomial equations can be solved by factoring or by graphing. <br />
+      <br />
+      <ul>
+        <li>The `x`-intercepts of the graph of a polynomial function are the roots of the corresponding polynomial equation.
+          <br />
+        </li>
+        <li>When a polynomial function is in factored form, you can determine the zeros from the factors.
+          When it is not in factored form, you can use the factor theorem and the integral zero theorem to determine the factors.<br />
+          <br />
+        </li>
+      </ul>
+    </li>
+    <li>When a factor is repeated `n` times, the corresponding zero has <strong>multiplicity</strong>, `n`.<br />
+      <br />
+      <ul>
+        <li>Polynomial functions change sign at `x`-intercepts that correspond to zeros of <strong>odd multiplicity</strong>.
+          <br />
+          </li>
+        <li>Polynomial functions do not change sign at `x`-intercepts that correspond to zeros of <strong>even multiplicity</strong>.<br />
+          <br />
+          </li>
+        </ul>
+    </li>
+    <li>The shape of a graph close to a zero of `x=a` (multiplicity `n`)  is similar to the shape of the graph of a function with degree equal to `n` of the form `y=(x-a)^n`.</li>
+    <ul>
+          <li>
+          <p>A curve that <strong>cuts or crosses</strong> the `x`-axis has a multiplicity of   one.</p>
+          <p><img src="images/screen_calc_line.png" width="20%" alt=""/></p>
+          </li>
+          </ul>
+          <ul>
+          <li><p>A graph that is<strong> tangent or bounces off</strong> the `x`-axis will always have a multiplicity   of 2.</p>
+          <p><img src="images/screen_calc_quadratic.png" width="20%" alt=""/></p>          
+          </li>
+          </ul>
+          <ul>
+          <li><p>A curve that <strong>meanders across or gently sits while crossing</strong> the `x`-axis will have a multiplicity of 3.</p>
+          <p><img src="images/screen_calc_cubic.png" width="20%" alt=""/></p>
+          </li>
+          </ul>
+	<li>The graph of a polynomial function of the form `y=a[b(x-h)]^n +k` &nbsp; or &nbsp; `y-k=a[b(x-h)]^n` can be sketched by applying transformations to the graph of  `y=x^n`, where `n\in N`. </li>
+  </ul>
+	</div>
+	<div class="Definition">
+<h4>Polynomial Equation with One   Side Equal to Zero.</h4>
+<p>The following values are identical when given a polynomial equation with one   side equal to zero: </p>
+<ul>
+  <li>the zeros of the polynomial</li>
+  <li>the roots of the equation</li>
+  <li>the `x`-intercepts of the graph of the polynomial </li>
+  </ul>
+<p>Having zero on one side of the equation is crucial. If the equation had been   something like `(2x-3)(x+1)(x-2)=7` (note the 7 instead of 0), the zeros of the polynomial on the left   side `(x=3/2, -1, 2)` would not be the same as the root of the equation `(x=2.7481...)`.</p>
+	</div>
+<div class="Example">
+<h4>Example 1</h4>
+<p>Determine the roots of the following polynomial equation, `y=x^4-6x^3+12x^2-8x`</p>
+<div class="Solution">
+  <h4>Solution</h4>
+<p>`y=x^4-6x^3+12x^2-8x`</p>
+<p>`y=x(x^3-6x^2+12x-8)`</p>
+<p>`y=x(x-2)(x-4x+4)`</p>
+<p>`y=x((x-2)(x-2)(x-2)`</p>
+<p>`y=x(x-2)^3`</p>
+<p><img src="images/example1.png" width="200" height="200" alt=""/></p>
+<ul>
+<li>The graph of a function with a zero  `x=2` of multiplicity 3 looks like the graph of the 3-rd degree  function `y=(x-2)^3` in the region close to `x= 2`.</li>
+<li>The graph crosses over the `x`-axis at the zero of odd multiplicity.</li>
+<li>The function is positive for values of `x` in the intervals  `x\lt 0` and `x\gt 2`. The function is negative for values of `x` in the interval `0\lt x\lt 2`.</li>
+<li>The polynomial equation `x^4-6x^3+12x^2-8x=0` has two distinct real roots `x=0` and `x=2`.</li>
+</ul>
+</div>
+</div>
+<div class="Example">
+<h4>Example 2</h4>
+<p>Determine the roots of the following polynomial equation, `y=x^5-8x^4+24x^3-32x^2+16x`</p>
+<div class="Solution">
+<h4>Solution</h4>
+<p>`y=x^5-8x^4+24x^3-32x^2+16x`</p>
+<p>`y=x(x^4-8x^3+24x^2-32x+16)`</p>
+<p>`y=x(x-2)(x^3-6x^2+12x-8)`</p>
+<p>`y=x(x-2)(x-2)(x^2-4x+4)`</p>
+<p>`y=x(x-2)(x-2)(x-2)(x-2)`</p>
+<p>`y=x(x-2)^4`</p>
+<p><img src="images/example2.png" width="200" height="200" alt=""/></p>
+<ul>
+<li>The graph of a function with a zero of `x=2` of multiplicity 4  looks like the graph of the 4-th degree function `y=(x-2)^4` in the region close to `x=2`.</li>
+<li>The graph touches, but does not cross, the `x`-axis at the zero of even multiplicity.</li>
+<li>The function is positive for values of `x` in the intervals `0 \lt x\lt 2` and `x\gt 2`. The function is negative for values of `x` in the interval  `x\lt 0`.</li>
+<li>The polynomial equation `x^5-8x^4+24x^3-32x^2+16x=0` has two distinct real roots `x=0` and `x=2`.</li>
+</ul>
+</div>
+</div>
+<div class="Example">
+<h4>Example 3</h4>
+<p>Solve each equation.</p>
+<ol tyep="a">
+<li>`(x+1)(x-4)(x+5)=0`</li>
+<li>`(x+6)(x-3)^2=0`</li>
+<li>`x^3+x^2=6x`</li>
+<li>`0=w^3-5w^2+2w+8`</li>	
+</ol>
+<div class="Solution">
+<h4>Solution</h4>
+<ol type="a">
+<li>
+<p>`(x-1)(x-4)(x+5)=0`</p>
+<p>Set each factor equal to `0`.</p>
+<p>`(x+1)=0, x=-1`</p>
+<p>`(x-4)=0, x=4`</p>
+<p>`(x+5)=0, x=-5`</p>
+<p>The solutions are -5, -1, and 4.</p>
+</li>
+<li>
+<p>`(x+6)(x-3)^2=0`</p>
+<p>`(x+6)(x-3)(x=3)=0`</p>
+<p>Set each factor to `0`.</p>
+<p>`(x+6)=0, x=-6`</p>
+<p>`(x-3)=0, x=3`</p>
+<p>`(x-3)=0, x=3`</p>
+<p>The solutions are -6 and 3.</p>
+</li>
+<li><p>Rewrite `x^3+x^2=6x` as `x^3+x^2-6x=0`</p>
+<p>`x^3+x^2-6x=0`</p>
+<p>`x(x^2+x-6)=0`</p>
+<p>`x(x+3)(x-2)=0`</p>
+<p>Set each factor to `0`.</p>
+<p>`x=0`</p>
+<p>`(x+3)=0, x=-3`</p>
+<p>`(x-2)=0, x=2`</p>
+<p>The solutions are -3, 0, and 2.</p>
+</li>
+<li>
+<p>`w^3-5w^2+2w+8=0`</p>
+<p>`P(-1)=0`</p>
+<p>Therefore, `(w+1)` is a factor.</p>
+<p>Use synthetic division to find another factor.</p>
+<p><img src="images/example_3_synthetic.fw.png" width="100" height="100"/></p>
+<p>`(w+1)(w^2-6w+8)=0`</p>
+<p>`(w+1)(w-2)(w-4)=0`</p>
+<p>Set each factor to `0`.</p>
+<p>`(w+1)=0, w=-1`</p>
+<p>`(w-2)=0, w=2`</p>
+<p>`(w-4)=0, w=4`</p>
+<p>The solutions are -1, 2, and 4.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="Example">
+  <h4>Example 4</h4>
+<p>Given the graph of a polynomial function, find solutions of the corresponding polynomial equation. The roots are all integral values.</p>
+<ol type="a">
+	<li><p>`x^3+5x^2-2x-24=0`</p>
+		<p><img src="images/TT2a_graph.png" width="200" height="200" alt=""/></p>
+	</li>
+	<li><p>`x^3-2x^2-4x+8=0`</p>
+	<p><img src="images/TT2b_graph.png" width="200" height="200" alt=""/></p>
+	</li>
+	<li><p>`-x^4-2x^3+8x^2+18x+9=0`</p>
+	<p><img src="images/TT2c_graph.png" width="200" height="200" alt=""/></p>
+	</li>
+	<li><p>`x^4+x^3-3x^2-5x-2=0`</p>
+	<p><img src="images/TT2d_graph.png" width="200" height="200" alt=""/></p>
+	</li>
+</ol>
+<div class="Solution">
+<h4>Solution</h4>
+<ol type="a">
+	<li><p>The `x`-intercepts appear to be -4, -3, and 2.</p>
+        <p>The solutions are -4, -3, and 2.</p></li>
+        <li><p>The `x`-intercepts appear to be -2 and 2.</p>
+        <p>The solutions are -2 and 2.</p></li>
+        <li><p>The `x`-intercepts appear to be -3, -1, and 3.</p>
+        <p>The solutions are -3, -1, and 3.</p></li>
+        <li><p>The `x`-intercepts appear to be -1 and 2.</p>
+        <p>The solutions are -1 and 2.</p></li>
+</ol>
+</div>
+</div>
+<div class="Example">
+  <h4>Example 5</h4>
+<p>For the following graph of a polynomial function,</p>
+<p> <img src="images/TT2_graph.png" width="200" height="200" alt=""/></p>
+<ol type="a">
+	<li>State the `x`-intercepts.</li>
+	<li>What is the sign of the leading coefficient?</li>
+	<li>Fill in the blanks  the intervals and select  where the function  is positive or  negative.</li>
+<table class="DataTable">
+<tr>
+	<th>Interval</th>
+	<td>`x<-3`</td>
+	<td>`-3 < x < 2`</td>
+	<td>`x>2`</td>
+</tr>
+<th>Sign of `f(x)`</th>
+<td></td>
+<td></td>
+<td></td>
+</table>
+<li><p>Explain whether the graph might represent a polynomial that has zero(s)  of multiplicity 1, 2, or 3.</p></li>
+<li><p>Write the corresponding polynomial  possible equation.</p></li>
+	<li><p>State the roots of the  equation from e).</p></li>
+</ol>
+<div class="Solution">
+<h4>Solution</h4>
+<ol type="a">
+	<li><p>The `x`-intercepts are -3 and 2.</p></li>
+        <li><p>The graph extends up  into quadrant I and up into quadrant II, so the leading coefficient is positive.</p></li>
+        <li>
+        <table class="DataTable">
+<tr>
+	<th>Interval</th>
+	<td>`x<-3`</td>
+	<td>`-3 < x < 2`</td>
+	<td>`x>2`</td>
+</tr>
+<th>Sign of `f(x)`</th>
+<td>positive</td>
+<td>negative</td>
+<td>positive</td>
+</table>
+</li>
+        <li><p>The graph  crosses the `x`-axis at both `x`-intercepts, so the two `x`-intercepts are of odd multiplicity. The least possible multiplicity is 1 and the greatest possible multiplicity is 3. In the neighborhood of `x=2`, the graph behaves like the cubic curve `y=(x-2)^3`. Therefore, `x=-3` is the zero of   multiplicity 1 and `x=2` is a zero of multiplicity 3.</p></li>
+        <li><p>The `x`-intercepts are -3  and 2 (multiplicity 3). The factors are `x+3`, and `(x-2)^3`.</p>
+        <p>The possible polynomial equation is `(x+3)(x-2)^3=0`        </p></li>
+        <li><p>`(x+3)(x-2)^3=0`</p>
+        <p>Set each factor to `0`.</p>
+        <p>`(x+3)=0, x=-3`</p>
+        <p>`(x-2)=0, x=2`</p>
+        <p>The solutions are -3 and 2. The `x`-intercepts of the graph of a polynomial function are the roots of the corresponding polynomial equation.</p></li>
+</ol>
+</div>
+</div>
+
+<div class="Example">
+  <h4>Example 6</h4>
+<p>Sketch the graph of `y=-2(1/4x-1)^3+5` using transformations. State the domain and range of the function.</p>
+<div class="Solution">
+<h4>Solution</h4>
+<p>For the function as `y=-2(1/4x-1)^3+5`, factor the coefficient of the `x` term to identify the transformations of the function more easily. So, rewrite `y=-2(1/4x-1)^3+5` as `y=-2(1/4(x-4))^3+5`.</p>
+<p><img src="images/TT4_transformations_graph.png" width="30%" alt=""/></p>
+        <p>To sketch the graph of `y=-2(1/4(x-4))^3+5`, first sketch the graph of `y=x^3`. Then, sketch the graph of `y=2x^3` which is a vertical stretch  of the graph of `y=x^3`  by a factor of 2. Then, sketch the graph of `y=2(1/4x)^3` which is a horizontal stretch of the graph of `y=2x^3` by a factor of 4. </p>
+        <p>Then, sketch the graph of  `y=-2(1/4x)^3` which is a reflection of the graph of  `y=2(1/4x)^3` in the `x`-axis. </p>
+        <p>Then, apply the horizontal translation of 4 units to the right and the vertical translation of 5 units upward.</p>
+        <p>The result is the graph of `y=-2(1/4(x-4))^3+5` or `y=-2(1/4x-1)^3+5`.</p>
+        <p>The domain is `{x|x\ in R}` and the range is `{y|y\ in R}`.</p>
+	</div>
+	</div>
+
+<div class="Example">
+  <h4>Example 7</h4>
+  <p><img src="images/egypt_2487682010_9096dd3775_m.jpg" width="10%" class="TextWrapLeft Rounded"/></p>
+<p>Solve the equation `x^3+2x^2-45=0` to find the dimensions of one of the boxes found in Tutankhamun's tomb, where the width and the height of the box are each `x` metres, and the length is `x+2` metres.</p>
+
+<div class="Solution">
+<h4>Solution</h4>
+<p>The factors of -45 are `\pm1`, `\pm3`, `\pm5`, `\pm9`, `\pm15`, and `\pm45`.</p>
+        <p>`P(1)=-42`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(3)=0`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(-1)=-44` </p>
+        <p>Since `P(3)=0`, `x-3` is a factor of `x^3+2x^2-45`.</p>
+        <p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT5_synthetic.gif" width="145" height="74" alt=""/></p>
+        <p>Another factor is `x^2+5x+15`.</p>
+        <p>Use the quadratic formula with `a=1`, `b=5`, and `c=15` to check for other real roots.</p>
+        <p>`x=(-b+-sqrt(b^2-4ac))/(2a)`</p>
+        <p>`x=(-5+-sqrt((5)^2-4(1)(15)))/(2(1))`</p>
+        <p>`x=(-5+-sqrt(25-60))/2`</p>
+        <p>`x=(-5+-sqrt(-35))/2`</p>
+        <p>Since the square root of a negative number is not a real number, there are no real roots.</p>
+        <p>Therefore, `x^2+5x+15` cannot be factored.</p>
+        <p>So, `x=3`. The width and the height of the box are each 3 m, and the length is 5 m.</p>
+</div>
+	</div>
+<!--Internet div tag-->
+<div id="internet"><h2 class="InternetHeader">Videos & Links on the Internet</h2>
+<ul>
+<li>Watch the following  video examples to see more. Be patient. The videos may take some time to download.
+          <ul>
+            <li><a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/videos/common_factor.html" target="_blank">Example 1: Solving Equations with a Common Factor</a></li>
+            <li><a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/videos/integral_roots.html" target="_blank">Example 2: Solving Equations by Factoring (Finding Integral Roots)</a></li>
+            <li><a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/videos/equal_roots.html" target="_blank">Example 3: Equal Roots</a></li>
+            <li><a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/videos/graphing_factored.html" target="_blank">Example 4: Graphing a Function in Factored Form</a>        </li>
+          </ul>
+        </li>
+        </ul>
+</div>
+
+<!--Homework div tag-->
+<div id="textbook"><h2 class="TextbookHeader">Homework</h2>
+
+<p><strong>Read:</strong> p. 136-147</p>
+  
+  <p><strong>Practice:</strong> p. 147-150:  1-6, 9, 12, 14, 16.</p>
+ 
+<p><strong>Full solutions</strong>: <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/polynomial_equations_lesson/assets/polynomial_equations_textbook_solutions.pdf" target="_blank" rel="noopener">Polynomial Equations Solutions</a></p>
+<p>Check the solutions in the back of the textbook to make sure you are doing the questions correctly. If you aren't sure why you're getting a question wrong you can view the Full Solutions above.</p>
+<p>Ask your teacher if you have further questions!</p>
+</div>
+
+<!--Quiz div tag-->
+<div id="quiz"><h2 class="QuizHeader">Lesson Quiz</h2>
+<p>After reviewing the examples and completing the suggested textbook questions, complete the <strong> Lesson Quiz </strong>by clicking on  the &quot;quizzes&quot; link and choosing the quiz <strong>&quot;Solving Polynomial Equations Lesson Quiz&quot;</strong>.</p>
+<p>You will have 2  attempts at this quiz, with your highest mark being the one that is  recorded in the gradebook. </p>
+<p>You do not have to complete both lesson quiz attempts right away. Learn from your mistakes in the first attempt before completing the second attempt. Be sure to ask your instructor if you have any questions. </p>
+<p>Good luck! </p>
+</div>
+<!-- FOOTER -->
+<div id="footer">@2019 CBe-learn - Calgary Board of Education</div>
+</body>
+</html>

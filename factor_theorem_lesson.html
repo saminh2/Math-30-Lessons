@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<!--Lesson Name FILL IN-->
+<title>Lesson 3: The Factor Theorem</title>
+
+<!--Import of Stylesheet-->
+<link href="../../Template/cbestylesheet.css" rel="stylesheet" type="text/css" />
+<!-- Import jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+ <!-- Run jQuery script to add print css, add solution buttons, add Mathjax library-->
+<script src="../../Template/custom_scripts.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header">
+<h1>Lesson 3: The Factor Theorem</h1>
+</div>
+
+<!-- CONTENT -->
+
+
+<img src="images/easter_island.jpg" width="10%"  class="TextWrapLeft Rounded"/>
+<p><strong><em>Moai Statues:</em></strong> Easter Island, also known as Rapa Nui, is a tiny volcanic island in the Pacific Ocean with a mysterious   history  and some really big statues. The statues consist of large heads with elongated noses and ears.</p>
+<p>Several statues were carved from prisms whose volumes can be represented by the expression `x^3-9x^2+20x`, where `x` metres is the height of each prism. Factoring the expression `x^3-9x^2+20x` will give the other dimensions of each prism.</p>
+<p>There are two theorems covered in this lesson:</p>
+<ul>
+  <li>The <strong>factor theorem</strong> is a special case of the remainder theorem.   It is used in the same manner as the remainder theorem, but when the remainder is zero, the divisor is considered a factor of the polynomial.</li>
+  <li>The <strong>integral zero theorem </strong>provides a way to make a short list of all the possible integers that could make a polynomial equal to zero. </li>
+  <li>You can use the factors of the constant term of the polynomial to look for factors of the polynomial.</li>
+  </ul>
+
+<div id="review"><h2 class="ReviewHeader">Review</h2>
+
+<p>Before beginning this lesson you should be able to:</p>
+<ul>
+  <li>Use long division or synthetic division to divide polynomials.</li>
+  <li>Write prime factors for whole numbers.</li>
+  <li>Factor quadratic expressions.</li>
+  </ul>
+  <p>Follow this <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/long_division_and_factoring_review.html" target="_blank" rel="noopener">link</a>&nbsp;to review if needed.</p>
+</div>
+<h2>Investigation</h2>
+<p>As with integers, dividing a polynomial by one of its factors gives a remainder of zero.</p>
+<p>Complete the table by using the remainder theorem to find the remainder for each division. Determine which binomials are factors of each given polynomial.</p>
+
+<table class="DataTable">
+<tr>
+	<th>Polynomial, `P(x)`</th>
+	<th>Divisor, `x-a`</th>
+	<th>Remainder, `P(a)`</th>
+	<th>Factor? (Yes or No)</th>
+</tr>
+<tr>
+	<td>`x^3+x^2-4x-4`</td>
+	<td>`x+1`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+x^2-4x-4`</td>
+	<td>`x-1`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+x^2-4x-4`</td>
+	<td>`x+2`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+x^2-4x-4`</td>
+	<td>`x-2`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+x^2-4x-4`</td>
+	<td>`x+3`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x+1`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x-2`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x-3`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x+3`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x+4`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x-5`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>`x^3+2x^2-5x-6`</td>
+	<td>`x+6`</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+
+<p>Answer the following questions:</p>
+<p><strong>1.</strong> When a binomial is a factor, is its constant term a factor of the constant term of the polynomial?</p>
+<p><strong>2.</strong> If the constant term of a binomial is a factor of the constant term of the polynomial, is the binomial always a factor?</p>
+<p><strong>3. </strong>Consider the polynomial `P(x)=x^3+4x^2-7x-10`. </p>
+<p>If `x=a` satisfies  `P(a)=0`, then </p>
+<p>`a^3+4a^2-7a-10=0` or `a^3+4a^2-7a=10`</p>
+<p>Factoring  out the common factor on the left side of the equation gives the product </p>
+<p>`a(a^2+4a-7)=10`. </p>
+<p>Then, the possible integer values for the factors in the  product on the left side are the factors of 10. </p>
+<p>They are `\pm1`, `\pm2`, `\pm5`, and `\pm10`.</p>
+<p><strong>a)</strong> Test the possible values of `a` to find the three binomial factors, `x-a`, of `x^3+4x^2-7x-10`.</p>
+<p><strong>b)</strong> Multiply the three binomial factors to check that their product is `x^3+4x^2-7x-10`.</p>
+<div class="Definition">
+<h4>The Factor Theorem and Integral Zero Theorem Summary</h4>
+<ul>
+    <li>The <strong>factor theorem</strong> can be stated as follows.<br />
+      <br />
+      <strong>A polynomial `P(x)` has `x-a` as a factor if and only if `P(a)=0`.</strong><br />
+      <br />
+      </li>
+    <li>&quot;If and only if&quot; means  that the result works both ways. So, the factor theorem can be re-formulated in two statements: 
+      <ul>
+        <li>If `x-a` is a factor of `P(x)`, then `P(a)=0`.</li>
+        <li>If `P(a)=0`, then `x-a` is a factor of `P(x)`.<br />
+          <br />
+        </li>
+      </ul>
+    </li>
+    <li>The <strong>integral zero theorem </strong>provides a way to know which values of `a` to try when attempting to factor a polynomial. The factor theorem can be expressed as follows.<br />
+      <br />
+      <strong>If `x-a` is a factor of a polynomial function `P(x)` with integral coefficients, then `a` is a factor of the constant term of `P(x)`.</strong>    <br />
+      <br />
+    </li>
+    <li>The <strong>integral zero</strong> of a polynomial, `P(x)`, is the integer value of `x` that makes the polynomial equal to 0.</li>
+  </ul>
+  </div>
+  <div class="Definition">
+  <h2>Important! Factors of Two Opposite Numbers</h2>
+  <p>The factors of two opposite numbers are the same. For example, the factors of 10 and -10 are the same: `\pm1`, `\pm2`, `\pm5`, and `\pm10`. </p>
+	</div>
+
+<div class="Example">
+<h4>Example 1</h4>
+<p>Factor `x^3-x^2-17x-15`.</p>
+<div class="Solution">
+  <h4>Solution</h4>
+<p><strong><em>Step 1:</em></strong> Find a factor by evaluating `P(x)` for values of `x` that are the factors of the constant term, -15. </p>
+<p>The factors of -15 are `\pm1`, `\pm3`, `\pm5`, and `\pm15`.</p>
+<p><strong><em>Step 2:</em></strong> Apply the factor theorem to determine one factor.</p>
+<p>`P(x)=x^3-x^2-17x-15`</p>
+<p>`P(1)=1^3-1^2-17(1)-15`</p>
+<p>`P(1)=1-1-17-15`</p>
+<p>`P(1)=-32`</p>
+<p>Since `P(1) ne 0`, then `x-1` is not a factor of the polynomial.  Try the next factor.</p>
+<p>`P(-1)=(-1)^3-(-1)^2-17(-1)-15`</p>
+<p>`P(-1)=-1-1+17-15`</p>
+<p>`P(-1)=0`</p>
+<p>Since `P(-1)=0`, `x+1` is a factor of `x^3-x^2-17x-15`.</p>
+<p><strong><em>Step 3:</em></strong> Use either long or synthetic division to find another factor.</p>
+<p><img src="images/example_synthetic.gif" width="134" height="74" alt=""/></p>
+<p>Another factor is `x^2-2x-15`. </p>
+<p><strong><em>Step 4:</em></strong> Repeat the above steps until all factors are found or the remaining factor is a  trinomial which can be factored.</p>
+<p>Factoring `x^2-2x-15` gives `(x-5)(x+3)`.</p>
+<p>So, `x^3-x^2-17x-15=(x-5)(x+3)(x+1)`.</p>
+</div>
+</div>
+	<div class="Definition">
+		<h2>Important! Graphing the Corresponding Function</h2>
+  <p>The factors of the polynomial `x^3-x^2-17x-15` could have been founded by graphing the corresponding function `P(x)=x^3-x^2-17x-15`. </p>
+  <p align="center"><img src="images/example1_graph.png" width="202" height="133" alt=""/></p>
+  <p>The `x`-intercepts appear to be 5, -3, and -1. These are the real zeros of the function. Using these zeros and the zero product property, the polynomial can be written in factored form, as follows.</p>
+  <p align="center">`P(x)=(x-5)(x+3)(x+1)`</p>
+	</div>
+<div class="Example">
+  <h4>Example 2</h4>
+  <p>Factor `x^3-1`.</p>
+  <div class="Solution">
+    <h4>Solution</h4>
+    <p>The factors of 1 are `\pm1`.</p>
+<p>`P(x)=x^3-1`</p>
+<p>`P(1)=1^3-1`</p>
+<p>`P(1)=1-1`</p>
+<p>`P(1)=0`</p>
+<p>Therefore, `x-1` is a factor of `x^3-1`.</p>
+<p>Use synthetic division to find another factor.</p>
+<p><img src="images/example2_synthetic.gif" width="136" height="74" alt=""/></p>
+<p>Note that `x^3-1` can be written as `x^3+0x^2+0x-1`.</p>
+<p>Another factor of `x^3-1` is `x^2+x+1`. </p>
+<p>The expression `x^2+x+1` cannot be factored.</p>
+<p>So, `x^3-1=(x-1)(x^2+x+1)`.</p>
+</div>
+</div>
+<div class="Example">
+<h4>Example 3</h4>
+<p>Use the factor theorem to determine whether each polynomial has a factor of `x-4`.</p>
+	<ol type="a">
+		<li>`3x^2-7x-20`</li>
+		<li>`x^3-5x^2+3x+4`</li>
+		<li>`x^4-2x^3-8x^2+3x-4`</li>
+		<li>`x^4-3x^3-5x^2+16`</li>
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+<ol type="a">
+	<li> <p>Yes.</p>
+        <p>`P(4)=3(4)^2-7(4)-20`</p>
+        <p>`P(4)=48-28-20`</p>
+        <p>`P(4)=0`</p>
+        <p>Since `P(4)=0`,  `x-4` is a factor of `3x^2-7x-20`.</p></li>
+        <li><p>Yes.</p>
+        <p>`P(4)=(4)^3-5(4)^2+3(4)+4`</p>
+        <p>`P(4)=64-80+12+4`</p>
+        <p>`P(4)=0`</p>
+        <p>Since `P(4)=0`,  `x-4` is a factor of `x^3-5x^2+3x+4`.</p></li>
+        <li><p>No.</p>
+        <p>`P(4)=(4)^4-2(4)^3-8(4)^2+3(4)-4`</p>
+        <p>`P(4)=256-128-128+12-4`</p>
+        <p>`P(4)=8`</p>
+        <p>Since `P(4)=8`, `x-4` is not factor of `x^4-2x^3-8x^2+3x-4`.</p></li>
+        <li><p>Yes.</p>
+        <p>`P(4)=(4)^4-3(4)^3-5(4)^2+16`</p>
+        <p>`P(4)=256-192-80+16`</p>
+        <p>Since `P(4)=0`,  `x-4` is a factor of `x^4-3x^3-5x^2+16`</p></li>
+</ol>
+</div>
+</div>
+ <div class="Example">
+  <h4>Example 4</h4>
+  <p>Factor each polynomial completetly.</p>
+	<ol type="a">
+		<li>`x^3-2x^2-6x-8`</li>
+		<li>`k^3+6k^2-7k-60`</li>
+		<li>`x^3+27`</li>
+		<li>`2w^4+3w^3-7w^2-12w-4`</li>
+	</ol>
+<div class="Solution">
+<h4>Solution</h4>
+	<ol type="a">
+		<li><p>The factors of -8 are `\pm1`, `\pm2`, `\pm4`, and `\pm8`.</p>
+        <p>`P(1)=-15`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(2)=20`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(4)=0`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(-1)=-5`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(-2)=-12`</p>
+        <p>Since `P(4)=0`, `x-4` is a factor of `x^3-2x^2-6x-8`.</p>
+<p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT2a_synthetic.gif" width="130" height="74" alt=""/></p>
+        <p>Another factor  is `x^2+2x+2`. </p>
+        <p>The expression `x^2+2x+2` cannot be factored.</p>
+        <p>So, `x^3-2x^2-6x-8=(x-4)(x^2+2x+2)`.</p></li>
+        <li><p>The factors of -60 are `\pm1`, `\pm2`, `\pm3`, `\pm4`, `\pm5`, `\pm6`, `\pm10`, `\pm12`, `\pm15`, `\pm20`, `\pm30`, and `\pm60`.</p>
+<p>`P(1)=60`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(2)=-46`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(4)=72`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(-1)=-48`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(-2)=-30`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(-4)=0`</p>
+        <p>Since `P(-4)=0`, `k+4` is a factor of `k^3+6k^2-7x-60`.</p>
+        <p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT2b_synthetic.gif" width="121" height="74" alt=""/></p>
+        <p>Another factor is `k^2+2k-15`. </p>
+        <p>Factoring `k^2+2k-15` gives `(k-3)(k+5)`.</p>
+        <p>So, `k^3+6k^2-7x-60=(k-3)(k+4)(k+5)`.</p></li>
+        <li><p>The factors of 27 are `\pm1`, `\pm3`, `\pm9`, and `\pm27`.</p>
+        <p>`P(1)=28`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(3)=54`<br />
+          `P(-1)=26`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`P(-3)=0`</p>
+        <p>Since `P(-3)=0`, `x+3` is a factor of `x^3+27`.</p>
+        <p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT2c_synthetic.gif" width="118" height="74" alt=""/></p>
+        <p>Another factor  is `x^2-3x+9`. </p>
+        <p>The expression `x^2-3x+9` cannot be factored.</p>
+        <p>So, `x^3+27 =(x+3)(x^2-3x+9)`.</p></li>
+        <li><p>The factors of -4 are `\pm1`, `\pm2`, and `\pm4`.</p>
+        <p>`P(1)=-18`<br />
+          `P(-1)=0`</p>
+        <p>Since `P(-1)=0`, `w+1` is a factor of 
+          `2w^4+3w^3-7w^2-12w-4`.</p>
+        <p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT2d_synthetic.gif" width="158" height="74" alt=""/></p>
+        <p>Another factor is `2w^3+w^2-8w-4`. </p>
+        <p>Use the factor theorem again. The factors of -4 are `\pm1`, `\pm2`, and `\pm4`.</p>
+        <p>`P(1)=-9`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(2)=0` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `P(-1)=3`</p>
+        <p>Since `P(2)=0`, `w-2` is a factor of `2w^3+w^2-8w-4`.</p>
+        <p>Use synthetic division to find another factor.</p>
+        <p><img src="images/TT2d_synthetic1.gif" width="142" height="74" alt=""/></p>
+        <p>Another factor is `2w^2+5w+2`. </p>
+<p>Factor `2w^2+5w+2` by grouping.</p>
+<p>`2w^2+5w+2`</p>
+<p>`2w^2+4w+w+2`</p>
+<p>`2w(w+2)+(w+2)`</p>
+<p>`(w+2)(2w+1)`</p>
+<p>So, `2w^4+3w^3-7w^2-12w-4=(w-2)(w+1)(w+2)(2w+1)`.</p>
+</li>
+	</ol>
+</div>
+</div>
+	<div class="Example">
+<h4>Example 5</h4>
+<p>Given a polynomial, `P(x)`, how many of the following statements are correct?</p>
+<ol>
+  <li> The possible integral zeros of  `P(x)` consist of all the factors of the constant term.</li>
+  <li>If `P(a)=0`,  then `a` is a  factor of the constant  term of `P(x)`.</li>
+  <li>If `a` is a factor of the constant term of `P(x)`, then `x-a` is a factor of `P(x)`.</li>
+  <li>If `x-a` is a factor of `P(x)`, then `P(a)=0`.</li>
+  <li>If `P(a)=0`, then `x-a` is a factor of `P(x)`.</li>
+  <li> If `x-a` is a factor of `P(x)`, then `a` is a  factor of the constant term of `P(x)`.</li>
+  </ol>
+<div class="Solution">
+  <h4>Solution</h4>
+  <p>Five of the above statements are correct. </p>
+        <p>Statement 3 is not correct. Not all of the factors of the constant term may satisfy the equation `P(x)=0`. The factor theorem states that a polynomial `P(x)` has `x-a` as a factor if and only if `P(a)=0`.</p>
+	</div>
+	</div>
+	<div class="Example">
+<h4>Example 6</h4>
+<img src="images/moai_989363161_e3ca33a2a4_m.jpg" width="10%"  class="TextWrapLeft Rounded"/>
+<p>Return to the Moai Statues problem from the introduction section of this lesson. </p>
+
+<ol type="a">
+  <li>Factor the expression `x^3-9x^2+20x` to find the dimensions of the rectangular prisms used for some of the statues on Easter Island.</li>
+  <li>Use the factor theorem to check your answers to part a).</li>
+  <li>If `x` represents 6 m, what were the dimensions of the rectangular prism?</li>
+  </ol>
+<div class="Solution">
+  <h4>Solution</h4>
+  <ol type="a">
+  <li>	
+  <p>`x^3-9x^2+20x=x(x^2-9x+20)`</p>
+  <p>&nbsp;&nbsp;`=x(x-5)(x-4)`</p>
+  <p>The dimensions are `x`, `x-5`, and `x-4` metres.</p>
+  </li>
+  <li>
+<p>`P(0)=0^3-9(0)^2+20(0)`</p><p>`P(0)=0=0+0`</p>
+<p>`P(0)=0`
+<p></p>Note that factor `x` can be written as `x-0`.</p>
+<p>`P(5)=5^3-9(5)^2+20(5)`</p>
+<p>`P(5)=125-225+100`</p>
+<p>`P(5)=0`</p>
+&nbsp;
+<p>`P(4)=4^3-9(4)^2+20(4)`</p>
+<p>`P(4)=64-144+80`</p>
+<p>`P(4)=0`</p>
+</li>
+<li><p>`x=6` m</p>
+<p>`x-5=6-5=1` m</p>
+<p>`x-4=6-4=2` m</p>
+<p>If `x=6` m, the dimensions are 1 m, 2 m, and 6 m.</p>
+</li>
+</ol>
+</div>
+</div>
+<!--Internet div tag-->
+<div id="internet"><h2 class="InternetHeader">Videos & Links on the Internet</h2>
+<ul>
+    <li>Watch this presentation to learn more about the <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/assets/factor_theorem_ppt.ppt" target="_blank">Factor Theorem</a>.<br />
+      If you do not have the program   PowerPoint follow the link below. <br />
+      <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/assets/factor_theorem_ppt.pdf" target="_blank">View   Without PowerPoint (PDF)</a><br />
+      <br />
+    </li>
+    <li>Watch this presentation to learn more about the <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/assets/integral_zero_theorem_ppt.ppt" target="_blank">Integral Zero Theorem</a>.<br />
+If you do not have the program   PowerPoint follow the link below. <br />
+<a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/assets/integral_zero_theorem_ppt.pdf" target="_blank">View   Without PowerPoint (PDF)</a><br />
+      <br />
+    </li>
+    <li>Watch these video clips to see more. Be patient. The videos may take some time to download. <br />
+      <br />
+      <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/videos/verifying_factor.html" target="_blank">Example 1: Verifying a Factor</a><br />
+      <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/videos/factoring_polynomial.html" target="_blank">Example 2: Factoring a Polynomial</a><br />
+      <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/videos/factoring2.html" target="_blank">Example 3: Factoring a Polynomial</a><br />
+      <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/videos/application.html" target="_blank">Example 4: Application</a></li>
+  </ul>
+</div>
+
+<!--Homework div tag-->
+<div id="textbook"><h2 class="TextbookHeader">Homework</h2>
+<p><strong>Read:</strong> p. 126-133</p> 
+<p><strong>Practice:</strong> p. 133-135:  1, 2(a, c, e), 3(a, c, e), 4, 5(a, c, e), 6(a, c, e),  7,  9,  10, 12, 15, 16.</p>
+<p><strong>Full solutions</strong>: <a href="https://d2l.cbe.ab.ca/content/enforced/522134-cbel1718math301developmentslkrausnick/Polynomials/factor_theorem_lesson/assets/factor_theorem_textbook_solutions.pdf" target="_blank" rel="noopener">Factor Theorem Solutions</a></p>
+<p>Check the solutions in the back of the textbook to make sure you are doing the questions correctly. If you aren't sure why you're getting a question wrong you can view the Full Solutions above.</p>
+<p>Ask your teacher if you have further questions!</p>
+</div>
+
+<!--Quiz div tag-->
+<div id="quiz"><h2 class="QuizHeader">Lesson Quiz</h2>
+<p>After reviewing the examples and completing the suggested textbook questions, complete the <strong> Lesson Quiz </strong>by clicking on  the &quot;quizzes&quot; link and choosing the quiz <strong>&quot;The Factor Theorem Lesson Quiz&quot;</strong>.</p>
+<p>You will have 2  attempts at this quiz, with your highest mark being the one that is  recorded in the gradebook. </p>
+<p>You do not have to complete both lesson quiz attempts right away. Learn from your mistakes in the first attempt before completing the second attempt. Be sure to ask your instructor if you have any questions. </p>
+<p>Good luck! </p>
+</div>
+<!-- FOOTER -->
+<div id="footer">@2019 CBe-learn - Calgary Board of Education</div>
+</body>
+</html>
